@@ -1,1 +1,1 @@
-# MathGame
+In this game you need to make the player collect the multipliers of a specific number currently it's 3. So tha player need to collect 3,9,27,156 and so on. There is a required score(currently 10) and specific time(currently 25s).
