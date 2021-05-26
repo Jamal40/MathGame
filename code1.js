@@ -1079,7 +1079,7 @@ gdjs.copyArray(runtimeScene.getObjects("Sorry"), gdjs.Level1Code.GDSorryObjects1
 
 gdjs.Level1Code.condition0IsTrue_0.val = false;
 {
-gdjs.Level1Code.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.timerElapsedTime(runtimeScene, 5, "EndTheGame");
+gdjs.Level1Code.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.timerElapsedTime(runtimeScene, gdjs.evtTools.common.getVariableNumber(runtimeScene.getVariables().getFromIndex(3)), "EndTheGame");
 }if (gdjs.Level1Code.condition0IsTrue_0.val) {
 gdjs.copyArray(runtimeScene.getObjects("BtnHome"), gdjs.Level1Code.GDBtnHomeObjects1);
 gdjs.copyArray(runtimeScene.getObjects("BtnTryAgain"), gdjs.Level1Code.GDBtnTryAgainObjects1);
