@@ -578,9 +578,13 @@ gdjs.Level1Code.condition0IsTrue_0.val = false;
 {
 gdjs.Level1Code.condition0IsTrue_0.val = gdjs.evtTools.common.getVariableNumber(runtimeScene.getVariables().getFromIndex(2)) < gdjs.evtTools.common.getVariableNumber(runtimeScene.getVariables().getFromIndex(1));
 }if (gdjs.Level1Code.condition0IsTrue_0.val) {
+/* Reuse gdjs.Level1Code.GDMonsterObjects1 */
 gdjs.copyArray(runtimeScene.getObjects("Sorry"), gdjs.Level1Code.GDSorryObjects1);
 {for(var i = 0, len = gdjs.Level1Code.GDSorryObjects1.length ;i < len;++i) {
     gdjs.Level1Code.GDSorryObjects1[i].hide(false);
+}
+}{for(var i = 0, len = gdjs.Level1Code.GDMonsterObjects1.length ;i < len;++i) {
+    gdjs.Level1Code.GDMonsterObjects1[i].getBehavior("Health").Hit(3, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }
 }}
 
@@ -1124,9 +1128,6 @@ for(var i = 0, len = gdjs.Level1Code.GDShape4Objects1.length ;i < len;++i) {
 }
 }{for(var i = 0, len = gdjs.Level1Code.GDNumbersObjects1.length ;i < len;++i) {
     gdjs.Level1Code.GDNumbersObjects1[i].deleteFromScene(runtimeScene);
-}
-}{for(var i = 0, len = gdjs.Level1Code.GDMonsterObjects1.length ;i < len;++i) {
-    gdjs.Level1Code.GDMonsterObjects1[i].getBehavior("Health").Hit(3, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }
 }
 { //Subevents
